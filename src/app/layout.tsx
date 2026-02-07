@@ -1,9 +1,20 @@
 import type { Metadata } from "next";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
+
 export const metadata: Metadata = {
-  title: "LFX Concept Site",
-  description: "A Next.js site powered by Sanity CMS",
+  title: "Lake FX Media - Video Creative Agency",
+  description: "Transform your vision into captivating visual stories. We craft premium video content that moves audiences and drives results.",
 };
 
 export default function RootLayout({
@@ -12,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
