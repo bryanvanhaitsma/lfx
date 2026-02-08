@@ -56,18 +56,25 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-black/50 backdrop-blur-xl border-b border-white/10">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="text-2xl font-bold font-space-grotesk gradient-text">
-            Lake FX
-          </div>
+          <a href="/" className="flex items-center">
+            <img
+              src="/logo.webp"
+              alt="Lake FX"
+              className="h-9 w-auto"
+            />
+          </a>
           <div className="hidden md:flex gap-8 text-sm">
             <a href="#work" className="hover:text-purple-400 transition-colors">Work</a>
             <a href="#services" className="hover:text-purple-400 transition-colors">Services</a>
             <a href="#about" className="hover:text-purple-400 transition-colors">About</a>
             <a href="#contact" className="hover:text-purple-400 transition-colors">Contact</a>
           </div>
-          <button className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-purple-500/50 transition-all">
-            Start a Project
-          </button>
+          <a
+            href="/get-started"
+            className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-purple-500/50 transition-all"
+          >
+            Get Started
+          </a>
         </div>
       </nav>
 
@@ -232,7 +239,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-white/10 py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-2xl font-bold gradient-text font-space-grotesk">Lake FX</div>
+          <div className="text-2xl font-bold gradient-text font-space-grotesk">Lake FX Media</div>
           <div className="flex gap-6 text-sm text-gray-400">
             <a href="#" className="hover:text-white transition-colors">Instagram</a>
             <a href="#" className="hover:text-white transition-colors">Vimeo</a>
@@ -240,7 +247,7 @@ export default function Home() {
             <a href="#" className="hover:text-white transition-colors">Twitter</a>
           </div>
           <div className="text-sm text-gray-400">
-            © 2024 Lake FX Media. All rights reserved.
+            © 2026 Lake FX Media. All rights reserved.
           </div>
         </div>
       </footer>
