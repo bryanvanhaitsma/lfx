@@ -253,22 +253,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-white/10 py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-2xl font-bold gradient-text font-space-grotesk">Lake FX Media</div>
-          <div className="flex gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">Instagram</a>
-            <a href="#" className="hover:text-white transition-colors">Vimeo</a>
-            <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
-          </div>
-          <div className="text-sm text-gray-400">
-            © 2026 Lake FX Media. All rights reserved.
-          </div>
-        </div>
-      </footer>
-
       <style jsx>{`
         @keyframes fade-in {
           from {
