@@ -43,7 +43,7 @@ const portableTextComponents = {
 			<p className="text-lg text-gray-200 leading-relaxed mb-6">{children}</p>
 		),
 		blockquote: ({ children }: { children: ReactNode }) => (
-			<blockquote className="border-l-2 border-purple-500/60 pl-4 italic text-gray-300 mb-6">
+			<blockquote className="border-l-2 border-orange-400/70 pl-4 italic text-gray-300 mb-6">
 				{children}
 			</blockquote>
 		),
@@ -59,7 +59,7 @@ const portableTextComponents = {
 		link: ({ children, value }: { children: ReactNode; value?: { href?: string } }) => (
 			<a
 				href={value?.href}
-				className="text-purple-300 underline underline-offset-4 hover:text-purple-200"
+				className="text-orange-300 underline underline-offset-4 hover:text-orange-200"
 				rel="noreferrer"
 				target="_blank"
 			>

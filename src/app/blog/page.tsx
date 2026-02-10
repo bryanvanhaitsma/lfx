@@ -58,7 +58,7 @@ export default async function BlogPage() {
             {posts.map((post) => (
               <article
                 key={post._id}
-                className="border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition-colors"
+                className="border border-white/10 rounded-2xl p-6 hover:border-orange-400/60 transition-colors"
               >
                 <div className="text-sm text-gray-500 mb-3">
                   {formatDate(post.publishDate)}
@@ -66,7 +66,7 @@ export default async function BlogPage() {
                 <h2 className="text-2xl md:text-3xl font-semibold mb-3">
                   <Link
                     href={`/blog/${post.slug.current}`}
-                    className="hover:text-purple-300 transition-colors"
+                    className="hover:text-orange-300 transition-colors"
                   >
                     {post.title}
                   </Link>

@@ -18,73 +18,88 @@ export default function Home() {
     {
       title: "Brand Films",
       description: "Cinematic storytelling that captures your brand's essence and resonates with your audience.",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-orange-500 to-amber-400",
+      icon: (
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 text-black/80">
+          <path
+            fill="currentColor"
+            d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm0 2v8h16V8H4Zm7 2 5 3-5 3V10Z"
+          />
+        </svg>
+      )
     },
     {
       title: "Commercial Production",
       description: "High-impact commercials designed to convert viewers into customers.",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-sky-500 to-cyan-400",
+      icon: (
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 text-black/80">
+          <path
+            fill="currentColor"
+            d="M4 5h10a2 2 0 0 1 2 2v2l4-2v10l-4-2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v10h10V7H4Z"
+          />
+        </svg>
+      )
     },
     {
       title: "Social Content",
       description: "Scroll-stopping content optimized for every platform and algorithm.",
-      gradient: "from-orange-500 to-red-500"
+      gradient: "from-amber-400 to-orange-500",
+      icon: (
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 text-black/80">
+          <path
+            fill="currentColor"
+            d="M6 3h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4v-4H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v9h12V5H6Zm2 3h8v2H8V8Z"
+          />
+        </svg>
+      )
     },
     {
       title: "Motion Graphics",
       description: "Dynamic animations that bring your ideas to life with style and precision.",
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-teal-400 to-emerald-400",
+      icon: (
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 text-black/80">
+          <path
+            fill="currentColor"
+            d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-6l-4 3v-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v9h16V6H4Zm3 1h3v6H7V7Zm7 2h3v4h-3V9Z"
+          />
+        </svg>
+      )
     },
     {
       title: "Documentary",
       description: "Authentic stories told with depth, emotion, and journalistic integrity.",
-      gradient: "from-indigo-500 to-purple-500"
+      gradient: "from-sky-500 to-indigo-400",
+      icon: (
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 text-black/80">
+          <path
+            fill="currentColor"
+            d="M7 3h10a2 2 0 0 1 2 2v14l-4-2-4 2-4-2-4 2V5a2 2 0 0 1 2-2Zm0 2v11.5l2-1 4 2 4-2 2 1V5H7Zm2 2h6v2H9V7Zm0 4h6v2H9v-2Z"
+          />
+        </svg>
+      )
     }
   ];
 
   const portfolio = [
-    { title: "Tech Startup Launch", category: "Brand Film", color: "bg-purple-600" },
-    { title: "Luxury Auto Campaign", category: "Commercial", color: "bg-blue-600" },
-    { title: "Fashion Week Recap", category: "Social", color: "bg-pink-600" },
+    { title: "Tech Startup Launch", category: "Brand Film", color: "bg-orange-600" },
+    { title: "Luxury Auto Campaign", category: "Commercial", color: "bg-sky-600" },
+    { title: "Fashion Week Recap", category: "Social", color: "bg-amber-500" },
     { title: "Product Explainer", category: "Motion Graphics", color: "bg-cyan-600" },
-    { title: "Founder's Journey", category: "Documentary", color: "bg-orange-600" },
-    { title: "App Demo Video", category: "Commercial", color: "bg-green-600" },
+    { title: "Founder's Journey", category: "Documentary", color: "bg-teal-600" },
+    { title: "App Demo Video", category: "Commercial", color: "bg-indigo-500" },
   ];
 
   return (
     <main className="relative overflow-x-hidden">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-black/50 backdrop-blur-xl border-b border-white/10">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <a href="/" className="flex items-center">
-            <img
-              src="/logo.webp"
-              alt="Lake FX"
-              className="h-9 w-auto"
-            />
-          </a>
-          <div className="hidden md:flex gap-8 text-sm">
-            <a href="#work" className="hover:text-purple-400 transition-colors">Work</a>
-            <a href="#services" className="hover:text-purple-400 transition-colors">Services</a>
-            <a href="#about" className="hover:text-purple-400 transition-colors">About</a>
-            <a href="#contact" className="hover:text-purple-400 transition-colors">Contact</a>
-          </div>
-          <a
-            href="/get-started"
-            className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-purple-500/50 transition-all"
-          >
-            Get Started
-          </a>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 opacity-30"
           style={{
             transform: `translateY(${scrollY * 0.5}px)`,
-            background: 'radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.3), transparent 50%)'
+            background: 'radial-gradient(circle at 50% 50%, rgba(249, 115, 22, 0.28), transparent 55%)'
           }}
         />
         
@@ -118,7 +133,7 @@ export default function Home() {
             <button className="px-8 py-4 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-all">
               View Our Work
             </button>
-            <button className="px-8 py-4 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-all">
+            <button className="px-8 py-4 border border-orange-400/40 rounded-full font-medium hover:bg-orange-500/10 transition-all">
               Let's Talk
             </button>
           </div>
@@ -207,9 +222,11 @@ export default function Home() {
             {services.map((service, i) => (
               <div
                 key={i}
-                className="group p-8 rounded-2xl border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20"
+                className="group p-8 rounded-2xl border border-white/10 hover:border-orange-400/60 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/20"
               >
-                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${service.gradient} mb-6 group-hover:scale-110 transition-transform`} />
+                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${service.gradient} mb-6 group-hover:scale-110 transition-transform flex items-center justify-center`}>
+                  {service.icon}
+                </div>
                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                 <p className="text-gray-400 leading-relaxed">{service.description}</p>
               </div>
@@ -220,7 +237,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-32 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/25 to-sky-500/20 blur-3xl" />
         <div className="relative max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 font-space-grotesk">
             Ready to Create Something
@@ -230,7 +247,7 @@ export default function Home() {
           <p className="text-xl text-gray-400 mb-12">
             Let's bring your vision to life with the power of video
           </p>
-          <button className="px-12 py-5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-lg font-medium hover:shadow-2xl hover:shadow-purple-500/50 transition-all hover:scale-105">
+          <button className="px-12 py-5 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full text-lg font-medium text-black hover:shadow-2xl hover:shadow-orange-500/50 transition-all hover:scale-105">
             Start Your Project
           </button>
         </div>
